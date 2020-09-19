@@ -6,8 +6,8 @@
 ## Running
 python3
 
-1. Run 'bctest.py' in a python interpreter. 
-2. If you want to use your own test items, overwrite the file 'testitems.txt' with your desired file. if not, the program will clean the premade list in 'testitems.txt'.
+1. If you want to use your own test items, overwrite the file 'testitems.txt' with your desired file. if not, the program will clean the premade list in 'testitems.txt'.
+2. Run 'bctest.py' in a python interpreter. 
 3. Cleaned items from 'testitems.txt' will be written into file 'cleanitems.txt'.
 
 Assumptions:
