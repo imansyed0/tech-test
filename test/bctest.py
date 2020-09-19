@@ -1,3 +1,5 @@
+import re
+
 # load text
 itemsfile='test\\testitems.txt'
 blocklistfile = 'test\\blocklist.txt'
@@ -16,7 +18,7 @@ cleanlines=[]
 for sentence in itemlines:
     bad_sentence = False
     for blockedword in blockedlines:
-        if blockedword in sentence:
+        if re.search(r"\b" + re.escape(blockedword) + r"\b", sentence):
             bad_sentence = True
             break
     if not bad_sentence:
