@@ -6,11 +6,9 @@ blocklistfile = 'test\\blocklist.txt'
 
 # write text files to lists and clean up for search
 with open(blocklistfile, "r") as i:
-    blockedlines = [word.strip() for word in i.readlines()]
-    blockedlines = [x.lower() for x in blockedlines]
+    blockedlines = [word.strip().lower() for word in i.readlines()]
 with open(itemsfile, "r") as i:
-    itemlines = [word.strip() for word in i.readlines()]
-    itemlines = [x.lower() for x in itemlines]
+    itemlines = [word.strip().lower() for word in i.readlines()]
 
 # determine lines with blocked words in and make list of non-blocked lines
 # use break to avoid e.g. 'i had a bad bad day' appearing twice in the list
